@@ -1,0 +1,10 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#4c2d1b"/><stop offset="0.55" stop-color="#a87845"/><stop offset="1" stop-color="#e5bd86"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="640" cy="160" r="200" fill="#fff2dc" opacity=".15"/>
+  <ellipse cx="400" cy="562" rx="255" ry="80" fill="#2f170b" opacity=".3"/>
+  <path d="M230 420c78-106 152-90 170-26 30-74 126-104 190 30-82 136-262 140-360-4Z" fill="#f0c38a"/>
+  <path d="M315 372c-50 54-43 128 12 165M468 365c57 50 52 130-5 174M398 387c-18 60-15 113 4 160" stroke="#8a552e" stroke-width="18" stroke-linecap="round"/>
+  <path d="M285 450c48-20 80-10 112 24M512 444c-48-18-82-4-115 30" stroke="#6f3d20" stroke-width="12" stroke-linecap="round" opacity=".7"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7de">عين جمل</text>
+</svg>

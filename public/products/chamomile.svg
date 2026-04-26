@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#766521"/><stop offset="0.58" stop-color="#cfb647"/><stop offset="1" stop-color="#fff3bb"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="610" cy="160" r="210" fill="#fffbea" opacity=".22"/>
+  <ellipse cx="400" cy="575" rx="250" ry="76" fill="#5d4a16" opacity=".3"/>
+  <g transform="translate(400 410)">
+    <g fill="#fff9e7"><ellipse rx="36" ry="92" transform="rotate(0) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(45) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(90) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(135) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(180) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(225) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(270) translate(0 -95)"/><ellipse rx="36" ry="92" transform="rotate(315) translate(0 -95)"/></g>
+    <circle r="58" fill="#e6aa20"/><circle r="32" fill="#9b6e10" opacity=".35"/>
+  </g>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff8dc">بابونج ذهبي</text>
+</svg>

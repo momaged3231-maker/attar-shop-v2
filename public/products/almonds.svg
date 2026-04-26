@@ -1,0 +1,9 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#60371f"/><stop offset="0.56" stop-color="#b8844e"/><stop offset="1" stop-color="#efc18a"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="165" cy="165" r="200" fill="#fff2dc" opacity=".15"/>
+  <ellipse cx="400" cy="560" rx="260" ry="80" fill="#351b0d" opacity=".28"/>
+  <path d="M225 415c115-112 238-130 350-36-80 160-240 190-350 36Z" fill="#fff2d8" opacity=".9"/>
+  <g fill="#b97944" stroke="#6d3b1d" stroke-width="10"><ellipse cx="318" cy="420" rx="45" ry="95" transform="rotate(38 318 420)"/><ellipse cx="405" cy="385" rx="44" ry="96" transform="rotate(-18 405 385)"/><ellipse cx="492" cy="440" rx="45" ry="95" transform="rotate(32 492 440)"/><ellipse cx="390" cy="493" rx="44" ry="92" transform="rotate(78 390 493)"/></g>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7de">لوز محمص</text>
+</svg>

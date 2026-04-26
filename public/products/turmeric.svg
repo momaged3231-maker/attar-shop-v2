@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#8f3e08"/><stop offset="0.55" stop-color="#e09319"/><stop offset="1" stop-color="#ffe08a"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="170" cy="180" r="190" fill="#fff3c7" opacity=".2"/>
+  <ellipse cx="400" cy="560" rx="250" ry="80" fill="#6b2906" opacity=".28"/>
+  <path d="M250 315h300l-35 238c-12 82-218 82-230 0l-35-238Z" fill="#fff8e4" opacity=".86"/>
+  <ellipse cx="400" cy="317" rx="150" ry="47" fill="#f7d374"/>
+  <ellipse cx="400" cy="350" rx="122" ry="32" fill="#c7680c" opacity=".8"/>
+  <path d="M323 448c52-42 104-42 156 0M333 495c45-30 89-30 134 0" stroke="#f3b52a" stroke-width="20" stroke-linecap="round"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7de">كركم عضوي</text>
+</svg>

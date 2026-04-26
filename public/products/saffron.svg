@@ -1,0 +1,12 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#4b0f0b"/><stop offset="0.52" stop-color="#b74322"/><stop offset="1" stop-color="#f2c268"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="175" cy="155" r="170" fill="#fff3c7" opacity=".16"/>
+  <circle cx="650" cy="625" r="230" fill="#190805" opacity=".22"/>
+  <ellipse cx="400" cy="520" rx="230" ry="82" fill="#2c0d08" opacity=".35"/>
+  <path d="M230 320c98-52 244-53 340 0l-42 230c-12 64-244 64-256 0l-42-230Z" fill="#fff7e6" opacity=".86"/>
+  <path d="M250 333c90 38 210 38 300 0" stroke="#8f2d18" stroke-width="24" stroke-linecap="round"/>
+  <path d="M305 398c72-50 122-22 190-68M330 455c65-54 130-28 180-80M286 502c82-44 148-20 225-88" stroke="#a10f12" stroke-width="15" stroke-linecap="round"/>
+  <path d="M310 389c58-35 119-18 177-58M337 448c55-36 115-23 164-58M293 496c68-31 136-21 210-75" stroke="#f0b23a" stroke-width="6" stroke-linecap="round"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7df">زعفران فارسي</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#0d0d0b"/><stop offset="0.55" stop-color="#484032"/><stop offset="1" stop-color="#b79b60"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="160" cy="165" r="200" fill="#fff0ca" opacity=".12"/>
+  <ellipse cx="400" cy="585" rx="220" ry="70" fill="#050504" opacity=".34"/>
+  <path d="M330 235h140l18 88c34 38 52 88 52 150 0 120-280 120-280 0 0-62 18-112 52-150l18-88Z" fill="#fff8e6" opacity=".84"/>
+  <rect x="344" y="192" width="112" height="72" rx="24" fill="#111"/>
+  <path d="M315 375c50 38 120 38 170 0v128c-50 39-120 39-170 0V375Z" fill="#222016"/>
+  <g fill="#f2d892"><ellipse cx="356" cy="426" rx="18" ry="10" transform="rotate(24 356 426)"/><ellipse cx="420" cy="458" rx="18" ry="10"/><ellipse cx="455" cy="410" rx="18" ry="10" transform="rotate(-22 455 410)"/></g>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="55" font-weight="800" fill="#fff7de">زيت حبة البركة</text>
+</svg>

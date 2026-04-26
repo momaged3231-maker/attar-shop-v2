@@ -12,6 +12,7 @@ type Product = {
   oldPrice?: number;
   unit: string;
   icon: string;
+  image: string;
   gradient: string;
   tag: string;
   description: string;
@@ -37,6 +38,7 @@ const products: Product[] = [
     oldPrice: 520,
     unit: "10 جرام",
     icon: "زع",
+    image: "products/saffron.svg",
     gradient: "from-[#7b1d18] via-[#c0542d] to-[#f4c05d]",
     tag: "الأكثر طلباً",
     description: "خيوط زعفران منتقاة بدرجة لون ورائحة ممتازة.",
@@ -48,6 +50,7 @@ const products: Product[] = [
     price: 85,
     unit: "250 جرام",
     icon: "هي",
+    image: "products/cardamom.svg",
     gradient: "from-[#224f2a] via-[#5f8f3f] to-[#d5d584]",
     tag: "طازج",
     description: "حبوب هيل كاملة برائحة مركزة للقهوة والحلويات.",
@@ -59,6 +62,7 @@ const products: Product[] = [
     price: 65,
     unit: "500 جرام",
     icon: "كر",
+    image: "products/turmeric.svg",
     gradient: "from-[#9d4a0b] via-[#e09b1d] to-[#f6d36d]",
     tag: "عضوي",
     description: "كركم نقي بلون غني، مناسب للمطبخ والوصفات اليومية.",
@@ -71,6 +75,7 @@ const products: Product[] = [
     oldPrice: 95,
     unit: "300 جرام",
     icon: "قف",
+    image: "products/cinnamon.svg",
     gradient: "from-[#5b2c18] via-[#a76634] to-[#ddb47c]",
     tag: "فاخر",
     description: "قرفة سيلانية خفيفة وحلوة بعيدان رقيقة عالية الجودة.",
@@ -82,6 +87,7 @@ const products: Product[] = [
     price: 55,
     unit: "250 جرام",
     icon: "زع",
+    image: "products/thyme.svg",
     gradient: "from-[#1f4b2e] via-[#6f8b4a] to-[#c7c78d]",
     tag: "بري",
     description: "زعتر طبيعي مجفف بعناية ليحافظ على رائحته ونكهته.",
@@ -93,6 +99,7 @@ const products: Product[] = [
     price: 40,
     unit: "150 جرام",
     icon: "با",
+    image: "products/chamomile.svg",
     gradient: "from-[#7a6b2d] via-[#d0b64d] to-[#fff0ad]",
     tag: "استرخاء",
     description: "زهور بابونج كاملة لمشروب مسائي هادئ وخفيف.",
@@ -104,6 +111,7 @@ const products: Product[] = [
     price: 50,
     unit: "200 جرام",
     icon: "يا",
+    image: "products/anise.svg",
     gradient: "from-[#4d2d1a] via-[#9b704a] to-[#e3c196]",
     tag: "مختار",
     description: "يانسون نجمي عطري، مناسب للمشروبات والوصفات الشرقية.",
@@ -115,6 +123,7 @@ const products: Product[] = [
     price: 60,
     unit: "300 جرام",
     icon: "حب",
+    image: "products/black-seed.svg",
     gradient: "from-[#171717] via-[#3a3a31] to-[#8c8265]",
     tag: "أساسي",
     description: "حبة بركة نظيفة ومنتقاة للاستخدام اليومي.",
@@ -127,6 +136,7 @@ const products: Product[] = [
     oldPrice: 340,
     unit: "1 كيلو",
     icon: "سد",
+    image: "products/sidr-honey.svg",
     gradient: "from-[#7a480b] via-[#d39825] to-[#ffe0a3]",
     tag: "نخبوي",
     description: "عسل سدر كثيف من مصادر جبلية موثوقة.",
@@ -138,6 +148,7 @@ const products: Product[] = [
     price: 320,
     unit: "1 كيلو",
     icon: "جب",
+    image: "products/mountain-honey.svg",
     gradient: "from-[#67400f] via-[#b97c24] to-[#f8cc76]",
     tag: "محدود",
     description: "عسل بري بطعم عميق وقوام غني لمحبي الجودة العالية.",
@@ -149,6 +160,7 @@ const products: Product[] = [
     price: 390,
     unit: "750 جرام",
     icon: "مل",
+    image: "products/royal-honey.svg",
     gradient: "from-[#2b2111] via-[#b38a2b] to-[#fff0b6]",
     tag: "Premium",
     description: "مزيج فاخر من العسل مع إضافات طبيعية مختارة.",
@@ -160,6 +172,7 @@ const products: Product[] = [
     price: 95,
     unit: "1 لتر",
     icon: "زي",
+    image: "products/olive-oil.svg",
     gradient: "from-[#203f21] via-[#718441] to-[#d6ca78]",
     tag: "حصاد جديد",
     description: "زيت زيتون بكر أول بعصر بارد ونكهة متوازنة.",
@@ -171,6 +184,7 @@ const products: Product[] = [
     price: 110,
     unit: "250 مل",
     icon: "زح",
+    image: "products/black-seed-oil.svg",
     gradient: "from-[#10100e] via-[#474034] to-[#b39a65]",
     tag: "نقي",
     description: "زيت معصور بعناية للاستخدام الخارجي والروتين اليومي.",
@@ -182,6 +196,7 @@ const products: Product[] = [
     price: 70,
     unit: "250 مل",
     icon: "لو",
+    image: "products/almond-oil.svg",
     gradient: "from-[#6b421f] via-[#c49058] to-[#f4d2a2]",
     tag: "عناية",
     description: "زيت لوز حلو خفيف مناسب للعناية بالبشرة والشعر.",
@@ -193,6 +208,7 @@ const products: Product[] = [
     price: 120,
     unit: "500 جرام",
     icon: "لو",
+    image: "products/almonds.svg",
     gradient: "from-[#6b3f23] via-[#b8844e] to-[#edc087]",
     tag: "محمص",
     description: "لوز مختار ومحمص بدرجة متوازنة للضيافة الفاخرة.",
@@ -204,6 +220,7 @@ const products: Product[] = [
     price: 135,
     unit: "500 جرام",
     icon: "جم",
+    image: "products/walnuts.svg",
     gradient: "from-[#4e301d] via-[#a87845] to-[#dfba84]",
     tag: "مختار",
     description: "عين جمل كامل بحجم ممتاز ومذاق غني.",
@@ -255,13 +272,19 @@ function Reveal({ children, className = "" }: { children: React.ReactNode; class
 function ProductVisual({ product }: { product: Product }) {
   return (
     <div className={`relative h-full overflow-hidden rounded-[28px] bg-gradient-to-br ${product.gradient}`}>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.34),transparent_32%),linear-gradient(135deg,rgba(255,255,255,0.08),rgba(0,0,0,0.16))]" />
+      <img
+        src={product.image}
+        alt={product.name}
+        loading="lazy"
+        className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-110"
+      />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.18),transparent_32%),linear-gradient(135deg,rgba(255,255,255,0.04),rgba(0,0,0,0.18))]" />
       <motion.div
         className="absolute -bottom-10 -left-10 h-32 w-32 rounded-full bg-white/18 blur-2xl"
         animate={{ scale: [1, 1.16, 1], opacity: [0.45, 0.7, 0.45] }}
         transition={{ duration: 4, repeat: Infinity }}
       />
-      <div className="relative flex h-full items-center justify-center">
+      <div className="relative flex h-full items-end justify-end p-5">
         <span className="rounded-full border border-white/30 bg-white/18 px-7 py-6 text-4xl font-black text-white shadow-2xl backdrop-blur-md">
           {product.icon}
         </span>

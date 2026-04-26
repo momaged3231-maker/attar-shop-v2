@@ -1,0 +1,14 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#4a2414"/><stop offset="0.52" stop-color="#9d5d2f"/><stop offset="1" stop-color="#e5bc82"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="650" cy="160" r="210" fill="#fff1d5" opacity=".16"/>
+  <ellipse cx="400" cy="565" rx="255" ry="72" fill="#2b1209" opacity=".3"/>
+  <g transform="rotate(-18 400 400)">
+    <rect x="230" y="305" width="380" height="54" rx="27" fill="#f0c18c"/>
+    <rect x="205" y="388" width="410" height="58" rx="29" fill="#7c3a1f"/>
+    <rect x="245" y="475" width="355" height="54" rx="27" fill="#bb7543"/>
+    <circle cx="238" cy="332" r="26" fill="#5a2714"/><circle cx="602" cy="332" r="26" fill="#5a2714"/>
+    <circle cx="233" cy="417" r="28" fill="#3f1a0e"/><circle cx="612" cy="417" r="28" fill="#3f1a0e"/>
+  </g>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff4de">قرفة سيلانية</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#633b1f"/><stop offset="0.56" stop-color="#c49058"/><stop offset="1" stop-color="#f7d5a6"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="638" cy="165" r="200" fill="#fff1d6" opacity=".15"/>
+  <ellipse cx="400" cy="585" rx="220" ry="70" fill="#3a1f0e" opacity=".3"/>
+  <path d="M340 230h120l18 90c34 35 54 88 54 154 0 116-264 116-264 0 0-66 20-119 54-154l18-90Z" fill="#fff7e4" opacity=".86"/>
+  <rect x="345" y="190" width="110" height="70" rx="23" fill="#6a3d1f"/>
+  <path d="M318 378c48 34 116 34 164 0v123c-48 38-116 38-164 0V378Z" fill="#d9a46c"/>
+  <path d="M392 418c55-74 107-67 138-33-39 66-94 86-138 33Z" fill="#8a5a31"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7de">زيت لوز</text>
+</svg>

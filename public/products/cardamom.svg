@@ -1,0 +1,12 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#18361f"/><stop offset="0.55" stop-color="#5f8f3f"/><stop offset="1" stop-color="#e0d98a"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="625" cy="170" r="190" fill="#fff8d6" opacity=".18"/>
+  <ellipse cx="410" cy="530" rx="245" ry="92" fill="#102014" opacity=".35"/>
+  <path d="M245 360c100-80 228-98 330-45 58 139-182 260-330 45Z" fill="#d8d59a"/>
+  <path d="M306 380c75-53 152-59 225-35" stroke="#315a2d" stroke-width="16" stroke-linecap="round"/>
+  <path d="M280 470c118-90 250-68 320 6-80 108-228 96-320-6Z" fill="#bacf76"/>
+  <path d="M334 475c75-34 140-34 207 0" stroke="#315a2d" stroke-width="15" stroke-linecap="round"/>
+  <path d="M205 500c80-65 164-69 250-15-66 90-167 98-250 15Z" fill="#eef0bd"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fffbe2">هيل هندي</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#724107"/><stop offset="0.55" stop-color="#d09321"/><stop offset="1" stop-color="#ffe0a2"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="165" cy="160" r="200" fill="#fff4d0" opacity=".2"/>
+  <ellipse cx="400" cy="575" rx="235" ry="76" fill="#5b2f05" opacity=".3"/>
+  <rect x="288" y="245" width="224" height="330" rx="68" fill="#fff7df" opacity=".86"/>
+  <rect x="312" y="286" width="176" height="230" rx="52" fill="#d18b14"/>
+  <path d="M332 348c48 34 88 34 136 0v84c-48 34-88 34-136 0v-84Z" fill="#f7c45b" opacity=".85"/>
+  <rect x="330" y="205" width="140" height="70" rx="22" fill="#4a2a09"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7de">عسل سدر</text>
+</svg>

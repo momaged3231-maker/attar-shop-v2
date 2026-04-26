@@ -1,0 +1,11 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="800" y2="800"><stop stop-color="#183b1e"/><stop offset="0.58" stop-color="#71843d"/><stop offset="1" stop-color="#d8ca77"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#g)"/>
+  <circle cx="640" cy="160" r="200" fill="#fff4c8" opacity=".15"/>
+  <ellipse cx="400" cy="585" rx="220" ry="70" fill="#102414" opacity=".32"/>
+  <path d="M345 220h110l18 95c34 34 57 88 57 160 0 110-260 110-260 0 0-72 23-126 57-160l18-95Z" fill="#fff8e6" opacity=".85"/>
+  <rect x="346" y="185" width="108" height="70" rx="24" fill="#263b19"/>
+  <path d="M325 370c42 34 108 34 150 0v120c-42 38-108 38-150 0V370Z" fill="#8c9a3e"/>
+  <path d="M395 343c40-50 91-47 122-21-48 48-91 55-122 21Z" fill="#2f6b2d"/>
+  <text x="400" y="700" text-anchor="middle" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#fff7de">زيت زيتون</text>
+</svg>
