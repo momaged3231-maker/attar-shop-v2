@@ -284,11 +284,6 @@ function ProductVisual({ product }: { product: Product }) {
         animate={{ scale: [1, 1.16, 1], opacity: [0.45, 0.7, 0.45] }}
         transition={{ duration: 4, repeat: Infinity }}
       />
-      <div className="relative flex h-full items-end justify-end p-5">
-        <span className="rounded-full border border-white/30 bg-white/18 px-7 py-6 text-4xl font-black text-white shadow-2xl backdrop-blur-md">
-          {product.icon}
-        </span>
-      </div>
     </div>
   );
 }
