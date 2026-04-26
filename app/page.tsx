@@ -458,7 +458,7 @@ function Navbar({ lang, cartCount, onCartOpen, onLanguageChange }: { lang: Lang;
             [copy.navStory, "about"],
             [copy.navReviews, "testimonials"],
           ].map(([label, href]) => (
-            <a key={href} href={`#${href}`} className={`nav-link text-sm font-semibold ${scrolled ? "text-[#263324]" : "text-white/86"}`}>
+            <a key={href} href={href === "products" ? "products/" : `#${href}`} className={`nav-link text-sm font-semibold ${scrolled ? "text-[#263324]" : "text-white/86"}`}>
               {label}
             </a>
           ))}
@@ -489,7 +489,7 @@ function Navbar({ lang, cartCount, onCartOpen, onLanguageChange }: { lang: Lang;
             {copy.cart}
             {cartCount > 0 && <span className="absolute -top-2 grid h-6 w-6 place-items-center rounded-full bg-[#c8102e] text-xs text-white ltr:-right-2 rtl:-left-2">{cartCount}</span>}
           </motion.button>
-          <a href="#products" className="hidden rounded-full bg-[#c8a45d] px-5 py-2.5 text-sm font-bold text-[#111] shadow-lg shadow-[#c8a45d]/20 sm:inline-block">
+          <a href="products/" className="hidden rounded-full bg-[#c8a45d] px-5 py-2.5 text-sm font-bold text-[#111] shadow-lg shadow-[#c8a45d]/20 sm:inline-block">
             {copy.shopNow}
           </a>
         </div>
@@ -522,7 +522,7 @@ function Hero({ lang }: { lang: Lang }) {
             {copy.heroText}
           </motion.p>
           <motion.div variants={fadeUp} className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} href="#products" className="rounded-full bg-[#c8a45d] px-8 py-4 text-center font-black text-[#111] shadow-2xl shadow-[#c8a45d]/20">
+            <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} href="products/" className="rounded-full bg-[#c8a45d] px-8 py-4 text-center font-black text-[#111] shadow-2xl shadow-[#c8a45d]/20">
               {copy.browseProducts}
             </motion.a>
             <motion.a whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }} href="#about" className="rounded-full border border-white/22 bg-white/8 px-8 py-4 text-center font-bold text-white backdrop-blur-md">
@@ -887,7 +887,7 @@ function Footer({ lang }: { lang: Lang }) {
         <div className="text-start">
           <h4 className="font-black text-[#ead7a4]">{copy.store}</h4>
           <div className="mt-4 space-y-3 text-white/62">
-            <a href="#products" className="block hover:text-white">{copy.navProducts}</a>
+            <a href="products/" className="block hover:text-white">{copy.navProducts}</a>
             <a href="#categories" className="block hover:text-white">{copy.navCategories}</a>
             <a href="#about" className="block hover:text-white">{copy.navStory}</a>
           </div>
