@@ -22,6 +22,10 @@ type Product = {
 
 type CartItem = Product & { quantity: number };
 
+const CART_STORAGE_KEY = "emirates-attar-cart";
+const FAVORITES_STORAGE_KEY = "emirates-attar-favorites";
+const LANGUAGE_STORAGE_KEY = "emirates-attar-language";
+
 const dictionary = {
   ar: {
     brand: "عطارة الإمارات",
@@ -859,9 +863,9 @@ function CartSidebar({ lang, open, items, onClose, onIncrease, onDecrease }: { l
                 <span>{copy.total}</span>
                 <span>{total} {copy.aed}</span>
               </div>
-              <button type="button" className="w-full rounded-full bg-[#062f22] px-6 py-4 font-black text-white">
+              <a href="checkout/" onClick={onClose} className="block w-full rounded-full bg-[#062f22] px-6 py-4 text-center font-black text-white">
                 {copy.checkout}
-              </button>
+              </a>
             </div>
           </motion.aside>
         </>
@@ -967,6 +971,7 @@ export default function Home() {
   const [cartOpen, setCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [toast, setToast] = useState("");
+  const [storageReady, setStorageReady] = useState(false);
   const copy = dictionary[lang];
   const direction = lang === "ar" ? "rtl" : "ltr";
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
@@ -975,6 +980,35 @@ export default function Home() {
     document.documentElement.lang = lang;
     document.documentElement.dir = direction;
   }, [direction, lang]);
+
+  useEffect(() => {
+    try {
+      const storedCart = window.localStorage.getItem(CART_STORAGE_KEY);
+      const storedFavorites = window.localStorage.getItem(FAVORITES_STORAGE_KEY);
+      const storedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+
+      if (storedCart) setCartItems(JSON.parse(storedCart) as CartItem[]);
+      if (storedFavorites) setFavorites(JSON.parse(storedFavorites) as number[]);
+      if (storedLanguage === "ar" || storedLanguage === "en") setLang(storedLanguage);
+    } finally {
+      setStorageReady(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    window.localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
+  }, [cartItems, storageReady]);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favorites));
+  }, [favorites, storageReady]);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+  }, [lang, storageReady]);
 
   const showToast = (message: string) => {
     setToast(message);

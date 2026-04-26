@@ -21,6 +21,10 @@ type Product = {
 
 type CartItem = Product & { quantity: number };
 
+const CART_STORAGE_KEY = "emirates-attar-cart";
+const FAVORITES_STORAGE_KEY = "emirates-attar-favorites";
+const LANGUAGE_STORAGE_KEY = "emirates-attar-language";
+
 const copy = {
   ar: {
     brand: "عطارة الإمارات",
@@ -377,7 +381,7 @@ function CartSidebar({ lang, open, items, close, increase, decrease }: { lang: L
                 <span>{c.total}</span>
                 <span>{total} {c.aed}</span>
               </div>
-              <button type="button" className="w-full rounded-full bg-[#062f22] px-6 py-4 font-black text-white">{c.checkout}</button>
+              <a href="../checkout/" onClick={close} className="block w-full rounded-full bg-[#062f22] px-6 py-4 text-center font-black text-white">{c.checkout}</a>
             </div>
           </motion.aside>
         </>
@@ -406,6 +410,7 @@ export default function ProductsPage() {
   const [cartOpen, setCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
   const [toast, setToast] = useState("");
+  const [storageReady, setStorageReady] = useState(false);
   const c = copy[lang];
   const direction = lang === "ar" ? "rtl" : "ltr";
   const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
@@ -414,6 +419,35 @@ export default function ProductsPage() {
     document.documentElement.lang = lang;
     document.documentElement.dir = direction;
   }, [direction, lang]);
+
+  useEffect(() => {
+    try {
+      const storedCart = window.localStorage.getItem(CART_STORAGE_KEY);
+      const storedFavorites = window.localStorage.getItem(FAVORITES_STORAGE_KEY);
+      const storedLanguage = window.localStorage.getItem(LANGUAGE_STORAGE_KEY);
+
+      if (storedCart) setCartItems(JSON.parse(storedCart) as CartItem[]);
+      if (storedFavorites) setFavorites(JSON.parse(storedFavorites) as number[]);
+      if (storedLanguage === "ar" || storedLanguage === "en") setLang(storedLanguage);
+    } finally {
+      setStorageReady(true);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    window.localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cartItems));
+  }, [cartItems, storageReady]);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    window.localStorage.setItem(FAVORITES_STORAGE_KEY, JSON.stringify(favorites));
+  }, [favorites, storageReady]);
+
+  useEffect(() => {
+    if (!storageReady) return;
+    window.localStorage.setItem(LANGUAGE_STORAGE_KEY, lang);
+  }, [lang, storageReady]);
 
   const filteredProducts = products.filter((product) => {
     const matchesCategory = selected === "all" || product.category === selected;
