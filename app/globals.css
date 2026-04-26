@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8f3ea;
+  --background: #fbf7ef;
   --foreground: #162116;
-  --deep-green: #0e2818;
-  --forest: #163b26;
+  --deep-green: #062f22;
+  --forest: #0f4f35;
   --sage: #6f8161;
   --cream: #f8f3ea;
   --paper: #fffaf0;
-  --gold: #c99a38;
-  --gold-soft: #ead29d;
-  --charcoal: #151512;
+  --gold: #c8a45d;
+  --gold-soft: #ead7a4;
+  --charcoal: #111111;
+  --uae-red: #c8102e;
+  --uae-green: #00732f;
   --muted: #756b5d;
 }
 
@@ -31,8 +33,9 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at top right, rgba(201, 154, 56, 0.16), transparent 34rem),
-    linear-gradient(180deg, #fbf7ef 0%, #f4eadb 100%);
+    radial-gradient(circle at top right, rgba(200, 164, 93, 0.16), transparent 34rem),
+    radial-gradient(circle at 10% 18%, rgba(200, 16, 46, 0.08), transparent 24rem),
+    linear-gradient(180deg, #fbf7ef 0%, #f5ead9 100%);
   color: var(--foreground);
   font-family: var(--font-arabic), Arial, sans-serif;
 }
@@ -66,7 +69,7 @@ a {
 }
 
 .gold-text {
-  background: linear-gradient(135deg, #fff2bf 0%, #d8aa45 48%, #8a651d 100%);
+  background: linear-gradient(135deg, #fff4c7 0%, #c8a45d 48%, #755322 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -74,8 +77,8 @@ a {
 
 .glass-panel {
   background: rgba(255, 250, 240, 0.78);
-  border: 1px solid rgba(201, 154, 56, 0.22);
-  box-shadow: 0 24px 80px rgba(14, 40, 24, 0.12);
+  border: 1px solid rgba(200, 164, 93, 0.26);
+  box-shadow: 0 24px 80px rgba(6, 47, 34, 0.14);
   backdrop-filter: blur(18px);
 }
 
@@ -95,10 +98,15 @@ a {
 
 .hero-pattern {
   background:
-    radial-gradient(circle at 15% 22%, rgba(234, 210, 157, 0.2), transparent 24rem),
-    radial-gradient(circle at 80% 12%, rgba(111, 129, 97, 0.34), transparent 22rem),
-    linear-gradient(135deg, #0b1c11 0%, #12351f 48%, #071209 100%);
+    linear-gradient(90deg, rgba(200, 16, 46, 0.24) 0 7%, transparent 7% 100%),
+    radial-gradient(circle at 15% 22%, rgba(234, 215, 164, 0.2), transparent 24rem),
+    radial-gradient(circle at 80% 12%, rgba(0, 115, 47, 0.28), transparent 22rem),
+    linear-gradient(135deg, #050505 0%, #062f22 46%, #0f4f35 100%);
   background-size: 160% 160%;
+}
+
+.uae-ribbon {
+  background: linear-gradient(90deg, #c8102e 0 25%, #00732f 25% 50%, #ffffff 50% 75%, #111111 75% 100%);
 }
 
 .luxury-border {

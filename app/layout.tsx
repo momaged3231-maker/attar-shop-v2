@@ -9,9 +9,9 @@ const notoKufi = Noto_Kufi_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "عطارة النخبة | متجر عطارة فاخر",
+  title: "Emirates Attar | عطارة إماراتية فاخرة",
   description:
-    "متجر عربي فاخر للأعشاب والتوابل والعسل والزيوت الطبيعية، مصمم كتجربة عرض جاهزة للعملاء.",
+    "Bilingual Arabic and English Emirati luxury attar store UI for herbs, spices, honey, oils, dates, and oud-inspired products.",
 };
 
 export default function RootLayout({
